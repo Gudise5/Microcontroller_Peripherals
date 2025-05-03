@@ -1,0 +1,20 @@
+00:54:58 **** Build of configuration Debug for project Testing_dev_board ****
+make -j11 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f446retx.d" -MT"Startup/startup_stm32f446retx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f446retx.o" "../Startup/startup_stm32f446retx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I/Users/gudise/STM32CubeIDE/workspace_1.18.1/commom_gpio_driver/Microcontroller_Peripherals/gpio_driver/Chip_headers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/gudise/STM32CubeIDE/workspace_1.18.1/commom_gpio_driver/Microcontroller_Peripherals/gpio_driver/Chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I/Users/gudise/STM32CubeIDE/workspace_1.18.1/commom_gpio_driver/Microcontroller_Peripherals/gpio_driver/Chip_headers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/gudise/STM32CubeIDE/workspace_1.18.1/commom_gpio_driver/Microcontroller_Peripherals/gpio_driver/Chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DSTM32F446xx -c -I../Inc -I/Users/gudise/STM32CubeIDE/workspace_1.18.1/commom_gpio_driver/Microcontroller_Peripherals/gpio_driver/Chip_headers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/gudise/STM32CubeIDE/workspace_1.18.1/commom_gpio_driver/Microcontroller_Peripherals/gpio_driver/Chip_headers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Testing_dev_board.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/gudise/STM32CubeIDE/workspace_1.18.1/commom_gpio_driver/Microcontroller_Peripherals/gpio_driver/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Testing_dev_board.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Testing_dev_board.elf
+ 
+arm-none-eabi-size  Testing_dev_board.elf 
+arm-none-eabi-objdump -h -S Testing_dev_board.elf  > "Testing_dev_board.list"
+   text	   data	    bss	    dec	    hex	filename
+    792	      0	   1568	   2360	    938	Testing_dev_board.elf
+Finished building: default.size.stdout
+ 
+Finished building: Testing_dev_board.list
+ 
+
+00:54:58 Build Finished. 0 errors, 0 warnings. (took 383ms)
+
