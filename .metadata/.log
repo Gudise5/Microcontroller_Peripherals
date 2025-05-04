@@ -484,3 +484,22 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/gudis
 
 !ENTRY org.eclipse.cdt.core 1 0 2025-05-04 01:16:36.746
 !MESSAGE Indexed 'Test_board' (3 sources, 62 headers) in 0.789 sec: 3,271 declarations; 5,422 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+!SESSION 2025-05-04 16:46:53.331 -----------------------------------------------
+eclipse.buildId=Version 1.18.1
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/gudise/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/gudise/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2025-05-04 16:47:06.830
+!MESSAGE Log4j2 initialized with config file /Users/gudise/STM32CubeIDE/workspace_1.18.1/commom_gpio_driver/Microcontroller_Peripherals/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2025-05-04 16:47:19.414
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-04 17:06:09.954
+!MESSAGE Indexed 'GPIO_project' (4 sources, 62 headers) in 1.72 sec: 3,273 declarations; 5,451 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.023%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-05-04 18:04:27.932
+!MESSAGE Indexed 'TrafficLightControllerUsingGpio' (4 sources, 62 headers) in 0.729 sec: 3,285 declarations; 5,631 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.022%)
